@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/ui/MinhaTela.dart';
 
+import 'ui/Login.dart';
+import 'ui/Main.dart';
+import 'ui/Tela2.dart';
+import 'ui/Tela3.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MinhaTela() //MyHomePage(title: 'Demo Home Page'),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Login(),
+        routes: <String, WidgetBuilder>{
+          '/Main' :(BuildContext context)=>  Main(),
+          '/Tela2' :(BuildContext context)=>  Tela2(),
+          '/Tela3' :(BuildContext context)=>  Tela3(),
+        });
   }
 }
 

@@ -17,7 +17,7 @@ class MinhaTelaState extends State<MinhaTela> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("App bar"),
+          title: Text("App teste bar"),
         ),
         body: Center(
           child: Padding(
